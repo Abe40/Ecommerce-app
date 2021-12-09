@@ -1,27 +1,27 @@
 <h2 id="product">Products</h2>
 <div class="container">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="../../assets/puma.jpg" alt="Card image cap">
+  <img class="card-img-top" src="{{product2.imageUrl}}" alt="Puma shoes available for sell">
   <div class="card-body">
-    <h5 class="card-title">{{productName2}}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{product2.name}}</h5>
+    <p class="card-text">price:{{product2.price}}</p>
+    <a href="#" class="btn btn-primary">{{product2.description}}</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="../../assets/nike.jpg" alt="Card image cap">
+  <img class="card-img-top" src="{{product1.imageUrl}}" alt="Nike shoes available for sell ">
   <div class="card-body">
-    <h5 class="card-title">{{productName1}}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{product1.name}}</h5>
+    <p class="card-text">id:{{product1.id}} <br>price:{{product2.price}}</p>
+    <a href="#" class="btn btn-primary">{{product1.description}}</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="../../assets/sketcher.jpg" alt="Card image cap">
+  <img class="card-img-top" src="{{product3.imageUrl}}" alt="Sketcher available for sell">
   <div class="card-body">
-    <h5 class="card-title">{{productName3}}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{product3.name}}</h5>
+    <p class="card-text">id:{{product3.id}} <br>price:{{product3.price}}</p>
+    <a href="#" class="btn btn-primary">{{product3.description}}</a>
   </div>
 </div>
 </div>
