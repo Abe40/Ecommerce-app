@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    margin:5em,0.5em;
+}
+.card{
+    display:block;
+    border:2px solid;
+    border-radius:2em;
+    padding: 1em 2em;
+    margin: 3em;
+}
+.card-img-top{
+    border-radius: 2em;
+    width:10em;
+    height:auto;
+}
