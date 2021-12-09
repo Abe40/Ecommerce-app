@@ -13,30 +13,35 @@ export class ProductsComponent implements OnInit {
   product1:Product={
     id: 1,
     name: 'Nike',
-    price: 2000,
+    price: 234,
     imageUrl: '../../assets/nike.jpg',
-    description: 'you can read more'    
+    description: 'view detail'    
 
 
   }
   product2:Product={
     id: 2,
     name: 'Puma',
-    price: 2000,
+    price: 156,
     imageUrl: '../../assets/puma.jpg',
-    description: 'you can read more'    
+    description: 'view detail'    
 
 
   }
   product3:Product={
     id: 3,
     name: 'Sketcher',
-    price: 2000,
+    price: 200,
     imageUrl: '../../assets/sketcher.jpg',
-    description: 'you can read more'    
+    description: 'view detail'    
 
 
   }
+  onViewDetail(id: number){
+		alert(id);      
+}
+
+
 
   constructor() { }
 

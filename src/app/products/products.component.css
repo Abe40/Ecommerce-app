@@ -13,4 +13,20 @@
     border-radius: 2em;
     width:10em;
     height:5em;
+    object-fit: cover;
+}
+#product{
+    margin-top:5em;
+    margin-left:5em;
+
+}
+.navig{
+    display:flex;
+
+}
+.navbar a{
+    display:block;
+    border:2em;
+    padding:0.5em;
+    margin:1em;
 }
