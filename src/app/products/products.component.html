@@ -1,27 +1,32 @@
-<div class="navig">
-  <nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#product">Products</a>
-  </nav>
-</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Customer</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Products</li>
+  </ol>
+</nav>
 <h2 id="product">Products</h2>
 <div class="container">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="{{product2.imageUrl}}" alt="Puma shoes available for sell">
+<div class="card"*ngFor="let product of productList" style="width: 18rem;">
+ <img class="card-img-top" src="{{product.imageUrl}}" alt="">
   <div class="card-body">
-    <h5 class="card-title">{{product2.name|uppercase}}</h5>
-    <input [(ngModel)]="product2.name" placeholder="name"/>
-    <p class="card-text">id:{{product2.id}} <br> price:{{product2.price|currency}}</p>
-    <a href="#" class="btn btn-primary" (click) = "onViewDetail(product2.id)">{{product2.description}}</a>
+    <h5 class="card-title">{{product.name|uppercase}}</h5>
+    <!-- <input [(ngModel)]="product2.name" placeholder="name"/> -->
+    <p class="card-text" *ngIf="product.price < 250" style="color:red">$ {{product.price}} (*On Discount)</p>
+    <p class="card-text" *ngIf="product.price >250">$ {{product.price}}</p>
+    <a class="btn btn-primary" (click) = "onViewDetail(product.id)">{{product.description}}</a>
+    
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<!-- <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{product1.imageUrl}}" alt="Nike shoes available for sell ">
   <div class="card-body">
     <h5 class="card-title">{{product1.name|uppercase}}</h5>
     <p class="card-text">id:{{product1.id}} <br>price:{{product1.price|currency}}</p>
     <a href="#" class="btn btn-primary">{{product1.description}}</a>
-  </div>
+  </div> -->
+  <!--  
 </div>
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{product3.imageUrl}}" alt="Sketcher available for sell">
@@ -29,6 +34,6 @@
     <h5 class="card-title">{{product3.name|uppercase}}</h5>
     <p class="card-text">id:{{product3.id}} <br>price:{{product3.price|currency}}</p>
     <a href="#" class="btn btn-primary">{{product3.description}}</a>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
 </div>

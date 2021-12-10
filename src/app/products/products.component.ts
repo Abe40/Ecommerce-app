@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from './product.object';
+import { Router } from '@angular/router';
+import { Product, PRODUCTS } from './product.object';
 
 @Component({
   selector: 'app-products',
@@ -7,6 +8,7 @@ import { Product } from './product.object';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  
   // productName1="Nike"
   // productName2="Puma"
   // productName3="Sketcher"
@@ -38,12 +40,14 @@ export class ProductsComponent implements OnInit {
 
   }
   onViewDetail(id: number){
-		alert(id);      
+    this.router.navigateByUrl('/products/detail/' + id);      
 }
+productList=PRODUCTS;
 
 
 
-  constructor() { }
+  constructor(private router:Router) { }
+  
 
   ngOnInit(): void {
     console.log("called")

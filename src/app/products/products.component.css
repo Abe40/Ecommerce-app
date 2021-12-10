@@ -30,3 +30,7 @@
     padding:0.5em;
     margin:1em;
 }
+
+form.container{
+    display:block;
+}
