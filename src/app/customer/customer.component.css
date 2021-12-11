@@ -1,6 +1,12 @@
-#image{
+/* #image{
     width:100%;
     height:100%;
-    background: url("../../assets/old.jpg");
-    background-repeat: no-repeat;
-}
+    /* background: url("x../../assets/old.jpg"); */
+    /* background-repeat: no-repeat; */
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+/* .container{
+    display:flex;
+} */

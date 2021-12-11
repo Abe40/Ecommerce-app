@@ -41,7 +41,7 @@ export class ProductsComponent implements OnInit {
 
   // }
   onViewDetail(id: number){
-    this.route.navigateByUrl('/products/detail/' + id);      
+    this.route.navigateByUrl('/products/detail/'+id);      
 }
 productList = PRODUCTS;
   newProduct = new Product();
