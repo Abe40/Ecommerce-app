@@ -31,6 +31,14 @@
     margin:1em;
 }
 
-form.container{
-    display:block;
+
+.brand{
+    display:flex;
+    margin-left:50vw;
+    
 }
+.cont{
+    margin-top: -60em;
+}
+
+

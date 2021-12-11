@@ -1,9 +1,17 @@
-export interface Product{
-    id: number;
+export class Product{
+    id: any;
     name: string;
-    price: number;
+    price: any;
     imageUrl: string;
     description: string;
+    constructor(){
+        this.id = null;
+        this.name = '';
+        this.price = null;
+        this.imageUrl = '';
+        this.description = '';
+
+    }
 }
 export const PRODUCTS: Product[ ] = [
     { id: 1,price: 242, name: 'Nike', imageUrl: '../../assets/nike.jpg',description: "view detail"},
