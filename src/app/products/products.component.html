@@ -54,7 +54,7 @@
 </ul>
 
 <div class="container">
-  <div class="shadow p-3 mb-5 bg-white rounded">
+<div class="shadow p-3 mb-5 bg-white rounded">
 <div class="card"*ngFor="let product of productList" style="width: 18rem;margin-left:5em">
  <img class="card-img-top" src="{{product.imageUrl}}" alt="">
   <div class="card-body">
@@ -62,7 +62,11 @@
     <!-- <input [(ngModel)]="product2.name" placeholder="name"/> -->
     <p class="card-text" *ngIf="product.price < 250" style="color:red">$ {{product.price}} (*On Discount)</p>
     <p class="card-text" *ngIf="product.price >250">$ {{product.price}}</p>
-    <a class="btn btn-primary" (click) = "onViewDetail(product.id)">{{product.description}}</a>
+    <a class="btn btn-primary" ></a>
+    <a class="btn btn-primary" (click) = "onViewDetail(product.id)">Add</a>
+    <a class="btn btn-primary" (click) = "onViewDetail(product.id)">update</a>
+    <a class="btn btn-primary" (click) = "onViewDetail(product.id)">Add to Cart</a>
+    
     
   </div>
 </div>
@@ -86,6 +90,7 @@
     <a href="#" class="btn btn-primary">{{product3.description}}</a>
   </div> -->
 <!-- </div> -->
+
 </div>
 <div class="cont">
   <div class="brand">
